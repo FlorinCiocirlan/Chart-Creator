@@ -10,8 +10,11 @@ function App() {
 		<Router>
 			<div>
 				<Header />
-				<Route exact path='/' component={Home}></Route>
-				<Route exact path='/docs' component={Docs}></Route>
+				<div className='main-container'>
+					<Route exact path='/' component={Home}></Route>
+					<Route exact path='/docs' component={Docs}></Route>
+				</div>
+
 				<Footer />
 			</div>
 		</Router>
