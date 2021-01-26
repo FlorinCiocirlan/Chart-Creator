@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-	--main-accent-color: #309EE3;
-	--darker-accent-color: #3B6078;
-	--lighter-accent-color: #6BBBED;
-	--secondary-accent-color: #2E99DC;
-	--secondary-lighter-color: #8DC2E3;
-  }
+	--main-accent-color: #309ee3;
+	--darker-accent-color: #3b6078;
+	--lighter-accent-color: #6bbbed;
+	--secondary-accent-color: #2e99dc;
+	--secondary-lighter-color: #8dc2e3;
+}
 
 * {
 	box-sizing: border-box;
@@ -34,7 +34,7 @@ a {
 	padding: 2rem;
 	border: 3px solid grey;
 	border-radius: 10%;
-	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 	margin: 1rem 0;
 }
 
@@ -43,11 +43,11 @@ a {
 }
 
 .nav {
-	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 footer {
-	box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.25);
+	box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 /* 
 @media only screen and (max-width: 600px) {

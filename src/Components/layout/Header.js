@@ -1,39 +1,35 @@
 import React from 'react';
 import { Navbar, Nav, Button, NavbarBrand } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../logo.png';
+import logo from '../../logowhite.png';
+import navSvg from '../../wave.svg';
+import '../../Header.css';
 
 export default function Header() {
 	return (
-		<Nav defaultActiveKey='/home' as='ul' className='bg-light'>
-			<Nav.Item as='li'>
-				<Link to='/'>
-					<Navbar.Brand>
+		<div className='navBar'>
+			<div className='nav-upper'>
+				<div className='nav-logo'>
+					<Link exact to='/'>
 						<img
-							className='d-inline-block align-top logo'
 							src={logo}
-							width='100px'
-							height='90px'
-							alt="logo"
+							width='180px'
+							height='180px'
+							alt='logo'
 						></img>
-					</Navbar.Brand>
-				</Link>
-			</Nav.Item>
-			<div className='d-flex align-items-center ml-auto mr-5'>
-			<Nav.Item
-				as='li'
-				className='ml-auto mr-3 d-flex align-self-bottom'
-			>
-				<Nav.Link eventKey='link-1' className='text-dark'>
-					About
-				</Nav.Link>
-			</Nav.Item>
-			<Nav.Item as='li'>
-				<Nav.Link eventKey='link-2' >
-					<Link to="/docs" className='text-dark'>Docs</Link>
-				</Nav.Link>
-			</Nav.Item>
+					</Link>
+				</div>
+				<div className='nav-links'>
+					<Link to='/docs' className='nav-title'>
+						Docs
+					</Link>
+
+					<Link className='nav-title'>About</Link>
+				</div>
 			</div>
-		</Nav>
+			<div className='nav-svg'>
+				<img src={navSvg} />
+			</div>
+		</div>
 	);
 }
