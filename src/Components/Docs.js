@@ -7,17 +7,21 @@ import lineImg from '../line.png';
 export default function Docs() {
     return (
         <Container className="centered-container">
-            <h1>Types of charts</h1>
+            <h1 className="main-title">Types of charts</h1>
             <hr></hr>
         <Row>
             <Col xs={{ order: 'last' }}>
                 <Card style={{ width: '18rem' }} className="doc-container">
                     <Card.Img variant="top" src={pieImg} />
                     <Card.Body >
-                        <Card.Title>Pie Chart</Card.Title>
+                        <Card.Title className="card-title">Pie Chart</Card.Title>
+                        <hr></hr>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Pie charts are good for showing simple proportional part-to-whole information.
+                         Chart Creator lets you create single series pie charts, where each series is made of multiple slices.
+                         <br/><br/>
+                         Values are displayed relative to each other: so a chart with values 1, 2, 3 
+                         will look the same as a chart with values 100, 200, 300.
                         </Card.Text>
                         {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
@@ -27,10 +31,12 @@ export default function Docs() {
                 <Card style={{ width: '18rem' }} className="doc-container">
                     <Card.Img variant="top" src={barImg} />
                     <Card.Body >
-                        <Card.Title>Bar Chart</Card.Title>
+                        <Card.Title className="card-title">Bar Chart</Card.Title>
+                        <hr></hr>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Bar charts are good for side-by-side comparison and spotting trends in a 
+                        small number of discrete data points. They're a good alternative to line 
+                        charts when you have only a few data points in a series.
                         </Card.Text>
                         {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
@@ -40,10 +46,12 @@ export default function Docs() {
                 <Card style={{ width: '18rem' }} className="doc-container">
                     <Card.Img variant="top" src={lineImg} />
                     <Card.Body >
-                        <Card.Title>Line Chart</Card.Title>
+                        <Card.Title className="card-title">Line Chart</Card.Title>
+                        <hr></hr>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Chart Creator lets you create line charts where data points are spaced evenly along the X-axis.
+                        <br/><br/>
+                        Take care not to overestimate the number of data points required for your line chart.
                         </Card.Text>
                         {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
