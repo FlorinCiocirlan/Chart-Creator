@@ -25,7 +25,7 @@ export default function Header() {
 				className='ml-auto mr-3 d-flex align-self-bottom'
 			>
 				<Nav.Link eventKey='link-1' className='text-dark'>
-					About
+					<Link to="/about" className="text-dark">About</Link>
 				</Nav.Link>
 			</Nav.Item>
 			<Nav.Item as='li'>
