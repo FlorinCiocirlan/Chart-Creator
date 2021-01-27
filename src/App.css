@@ -27,8 +27,12 @@ a {
 .centered-container {
 	width: 80%;
 	margin: 2rem auto;
-	text-align: center;
+
 	padding-bottom: 5rem;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .doc-container {
@@ -59,7 +63,4 @@ a {
 	color: var(--darker-accent-color);
 }
 
-.container {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
+
