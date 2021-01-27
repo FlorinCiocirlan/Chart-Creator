@@ -6,7 +6,7 @@ import lineImg from '../line.png';
 
 export default function Docs() {
     return (
-        <Container className="centered-container">
+        <Container className="centered-container text-center">
             <h1 className="main-title">Types of charts</h1>
             <hr></hr>
         <Row>
