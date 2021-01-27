@@ -1,39 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-<<<<<<< HEAD
 	--main-accent-color: #309ee3;
 	--darker-accent-color: #3b6078;
 	--lighter-accent-color: #6bbbed;
 	--secondary-accent-color: #2e99dc;
 	--secondary-lighter-color: #8dc2e3;
-=======
-  --main-accent-color: #309ee3;
-  --darker-accent-color: #3b6078;
-  --lighter-accent-color: #6bbbed;
-  --secondary-accent-color: #2e99dc;
-  --secondary-lighter-color: #8dc2e3;
->>>>>>> about-page
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  line-height: 1.4;
+	line-height: 1.4;
 }
 
 a {
-  color: #333;
-  text-decoration: none;
+	color: #333;
+	text-decoration: none;
 }
 
 .centered-container {
-<<<<<<< HEAD
 	width: 80%;
 	margin: 2rem auto;
 	text-align: center;
@@ -46,27 +37,13 @@ a {
 	border-radius: 10%;
 	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 	margin: 1rem 0;
-=======
-  width: 80%;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.doc-container {
-  padding: 2rem;
-  border: 3px solid grey;
-  border-radius: 10%;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  margin: 1rem 0;
->>>>>>> about-page
 }
 
 .logo {
-  margin-left: 2rem;
+	margin-left: 2rem;
 }
 
 .nav {
-<<<<<<< HEAD
 	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
@@ -87,11 +64,9 @@ a {
 .container {
 	margin-bottom: 0;
 	padding-bottom: 0;
-=======
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 footer {
-  box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.25);
->>>>>>> about-page
+	box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.25);
 }
