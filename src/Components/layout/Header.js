@@ -24,7 +24,7 @@ export default function Header() {
 						Docs
 					</Link>
 
-					<Link className='nav-title'>About</Link>
+					<Link to='/about' className='nav-title'>About</Link>
 				</div>
 			</div>
 			<div className='nav-svg'>
