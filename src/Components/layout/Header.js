@@ -28,7 +28,7 @@ export default function Header() {
 				</div>
 			</div>
 			<div className='nav-svg'>
-				<img src={navSvg} />
+				<img src={navSvg}/>
 			</div>
 		</div>
 	);
