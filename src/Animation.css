@@ -1,5 +1,7 @@
 .home-image {
-	max-width: 100%;
+	display: flex;
+	align-self: center;
+	max-width: 65%;
 	height: auto;
 	transform: translateY(-12vh);
 }
