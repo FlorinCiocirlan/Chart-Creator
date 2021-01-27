@@ -9,12 +9,18 @@ import thirdImage from '../thirdImage.png';
 import forthImage from '../forthImage.png';
 import fifthImage from '../fifthImage.png';
 import '../Animation.css';
+import ButtonPage from './GetStartedButton';
 
 // import './styles.css';
 
 class FullpageWrapper extends React.Component {
 	render() {
-		return <img src={fifthImage} fluid className='home-image' />;
+		return (
+			<div className='home-div'>
+				<img src={fifthImage} fluid className='home-image' />
+				<ButtonPage />
+			</div>
+		);
 	}
 }
 
