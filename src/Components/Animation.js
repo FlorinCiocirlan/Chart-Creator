@@ -14,7 +14,7 @@ class FullpageWrapper extends React.Component {
             online
           </h1>
         </span>
-        <img src={fifthImage} alt="home-image" fluid className="home-image" />
+        <img src={fifthImage} alt="home" fluid className="home-image" />
         <ButtonPage />
       </div>
     );

@@ -128,6 +128,9 @@ export default function PieForm() {
           </label>
           <input
             className="input-text js-input"
+            type="number"
+            max="100"
+            min="0"
             id={`value-${field}`}
             name={`value-${field}`}
             placeholder={dataValues[field]}
