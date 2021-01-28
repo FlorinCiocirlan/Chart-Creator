@@ -1,10 +1,8 @@
 import React from "react";
-import { Navbar, Nav, Button, NavbarBrand } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../../logowhite.png";
 import navSvg from "../../wave.svg";
 import "../../Header.css";
-import RgbSlider from "../RgbSlider";
 
 export default function Header() {
   return (
@@ -26,7 +24,7 @@ export default function Header() {
         </div>
       </div>
       <div className="nav-svg">
-        <img src={navSvg} />
+        <img alt="nav" src={navSvg} />
       </div>
     </div>
   );

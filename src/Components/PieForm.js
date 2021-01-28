@@ -89,7 +89,7 @@ export default function PieForm() {
             console.log(colors);
           }}
         >
-          <RgbSlider field={field}></RgbSlider>
+          <RgbSlider field={field} color={colors[field]}></RgbSlider>
         </div>
       ) : (
         " "

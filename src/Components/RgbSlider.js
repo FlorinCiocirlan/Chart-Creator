@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HuePicker } from "react-color";
 
 function RgbSlider(props) {
-  const [color, setColor] = useState("ff0000");
+  const [color, setColor] = useState(props.color);
 
   return (
     <div className="container">
