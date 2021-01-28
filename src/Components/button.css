@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:ital@0;1&display=swap');
 
 .button-div {
-	transform: translateY(-10vw);
+	transform: translateY(-20vh);
 }
 
 .button {
@@ -15,6 +15,12 @@
 
 .button-text {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: bold;
 }
+
+@media only screen and (max-width: 800px) {
+	.button-div {
+		transform: translateY(-16vh);
+	}
+  }

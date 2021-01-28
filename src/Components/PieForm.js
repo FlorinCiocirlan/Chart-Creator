@@ -27,12 +27,20 @@ export default function PieForm() {
   const handleDataChange = (data, value) => {
     console.log("schimb date");
     const [dataType, dataIndex] = data.split("-");
-    const setter = dataType === "data" ? setDataLabels : setDataValues;
+    let setter;
+    if (dataType === "data") {
+      setter = setDataLabels;
+    } else if (dataType === "value") {
+      setter = setDataValues;
+    } else {
+      return;
+    }
+    // const setter = dataType === "data" ? setDataLabels : setDataValues;
 
     if (!value) {
       if (dataType === "data") {
         value = dataLabels[dataIndex];
-      } else {
+      } else if (dataType === "value") {
         value = dataValues[dataIndex];
       }
     }
@@ -57,9 +65,9 @@ export default function PieForm() {
     elem.value = imgSrc;
     document.body.appendChild(elem);
     elem.select();
-    document.execCommand('copy');
+    document.execCommand("copy");
     document.body.removeChild(elem);
-  }
+  };
 
   const downloadChart = () => {
     axios({
@@ -236,7 +244,13 @@ export default function PieForm() {
             <FormControl readOnly type="text" value={imgSrc} />
           </div>
           <div class="col-md-1">
-            <Button className="submit-btn" style={{ maxWidth: "85px", borderRadius: "6px"}} onClick={copyLink()}>Copy</Button>
+            <Button
+              className="submit-btn"
+              style={{ maxWidth: "85px", borderRadius: "6px" }}
+              onClick={copyLink()}
+            >
+              Copy
+            </Button>
           </div>
         </div>
 
