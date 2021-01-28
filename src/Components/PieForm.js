@@ -52,6 +52,15 @@ export default function PieForm() {
     });
   };
 
+  const copyLink = () => {
+    const elem = document.createElement("textarea");
+    elem.value = imgSrc;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+  }
+
   const downloadChart = () => {
     axios({
       url: `${imgSrc}`,
@@ -223,8 +232,11 @@ export default function PieForm() {
           >
             Link:{" "}
           </div>
-          <div class="col-md-10">
+          <div class="col-md-9">
             <FormControl readOnly type="text" value={imgSrc} />
+          </div>
+          <div class="col-md-1">
+            <Button className="submit-btn" style={{ maxWidth: "85px", borderRadius: "6px"}} onClick={copyLink()}>Copy</Button>
           </div>
         </div>
 
